@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--位于父控件的中心位置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中心位置"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!--位于父控件中的左侧，位于btn02的左边-->
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn02"
+        android:text="1"/>
+
+    <!--位于btn01的右边-->
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/btn01"
+        android:text="2"/>
+
+    <!--位于btn01的下方-->
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/btn01"
+        android:text="3"/>
+
+    <!--位于父控件的最右边-->
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="4"/>
+
+    <!--位于btn03的右边-->
+    <!--该控件上方与下方分别于btn03控件的上下方对齐，但是因为高度不一样，所以自动上下居中-->
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btn03"
+        app:layout_constraintBottom_toBottomOf="@id/btn03"
+        app:layout_constraintLeft_toRightOf="@id/btn03"
+        android:text="5"/>
+
+
+
+    <!--layout_constraintLeft_toLeftOf:"parent"  位于父控件内部左侧-->
+    <!--同理，如果将left改成right/top/bottom，则表示位于父控件的内部右侧/顶部/底部-->
+    <!--如果同时有left和right，则表示水平居中，如果同时有top和bottom则表示垂直居中-->
+
+    <!--layout_constraintRight_toLeftOf="@id/btn02"  表示约束该控件位于btn02控件的左边-->
+    <!--中间的constraintRight表示约束控件的右边，toLeftOf表示约束控件的条件，即约束控件的相对控件-->
+
+    <!--layout_constraintTop_toTopOf="@id/btn03" 表示与btn03控件上方对齐-->
+    <!--layout_constraintBottom_toBottomOf="@id/btn03" 表示与btn03控件下方对齐-->
+    <!--两个同时出现，则上下居中-->
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="约束布局基本使用"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="圆形布局定位"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn01"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="强制约束"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn02"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chains（链）"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn03"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="填充父窗体约束"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn04"/>
+    <Button
+        android:id="@+id/btn06"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="goneMargin（隐藏边距）"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn05"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn07"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="约束之百分比布局"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn06"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn08"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn07"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn09"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Barrier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn08"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn09"
+        android:textAllCaps="false"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

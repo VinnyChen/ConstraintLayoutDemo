@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:text="center"
+        android:background="@color/green"/>
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:text="test"
+        app:layout_constraintCircle="@id/btn01"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="45"/>
+
+
+    <!--圆形布局-->
+    <!-- app:layout_constraintCircle:指定参照的控件id，（参照控件用于约束 约束控件的位置）,此处指定btn02控件约束于btn01控件的中心-->
+    <!-- app:layout_constraintCircleRadius:指定约束的控件中心与参照控件中心的距离（半径）-->
+    <!-- app:layout_constraintCircleAngle:指定约束的控件中心与参照控件中心的角度（偏移量）-->
+
+
+</android.support.constraint.ConstraintLayout>
